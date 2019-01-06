@@ -55,6 +55,7 @@ figcaption {
 
 #details a:link, #details a:visited {
     color: black;
+
     text-decoration: none;
 }
 
@@ -67,8 +68,46 @@ figcaption {
     color: red;
 }
 
+nav a {
+    font-family: "Roboto", sans-serif;
+}
 /*////////// LAYOUT /////////*/
 
 .wrapper {
-    background-color: blue;
+    width: 960px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.col-1 {
+    float: left;
+    width: 32%;
+    background: #ccc;
+}
+
+.col-2 {
+    float: left;
+    width: 66%;
+    background: #ccc;
+}
+
+.col-3 {
+    background: #ccc;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+}
+
+[class*="col-"] {
+    margin-left: 2%;
+}
+
+.first {
+    margin-left: 0%;
 }
