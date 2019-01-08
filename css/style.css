@@ -1,17 +1,8 @@
  @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/* This is how you write comments */
+/*///////// GLOBAL /////////*/
 
-/* CSS Syntax:
-
-selector {
-    property : value;
-    property : value;
-}
- */
-
- /* Type selector */
-p { /* select all <p> */
+p {
     font-size: 1em; /* 16px, ?pt, 100%, 1em */
     line-height: 1.5em;
     font-family: 'Roboto', sans-serif;
@@ -27,21 +18,14 @@ figcaption {
     text-align: right;
 }
 
-/* Class selector (applied to as many elements as you like) */
 
-.shadow-text { /* select elements with class="shadow-text" */
+
+.shadow-text {
     font: bold 2.6em "Roboto", sans-serif;
     color: white;
     text-shadow: 0 1px 1px #000;
 }
 
-/* id selector (apply to one unique element per page) */
-
-#logo { /* select elements with id="logo" */
-
-}
-
-/* Descendent Selector */
 
 #logo h1 { /* only style <h1> if inside id="logo" element */
     font-family: "Roboto", sans-serif;
@@ -56,6 +40,27 @@ figcaption {
 
 nav a {
     font-family: "Roboto", sans-serif;
+}
+
+table {
+    margin: 0 0 20px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+tr:nth-child(even) {
+    background: #efefef;
+}
+
+th, td {
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background: #555;
+    color: white;
 }
 
 /*///////// GENERAL STYLING //////////*/
@@ -74,6 +79,28 @@ nav a {
 
 #logo {
     padding: 84px 0 0;
+}
+
+#logo h1 {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  background: url(../images/exceptional-logo.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+#logo h2 {
+    display: inline-block;
+    font: 2.5em "Roboto", sans-serif;
+    margin: 0;
+    position: relative;
+    top: -9px;
+    left: 5px;
+    color: #303;
 }
 
 /*////////// BACKGROUNDS ///////////*/
@@ -276,18 +303,36 @@ background: linear-gradient(
 
  #social {
      position: fixed;
-     top: 200px;
+     top: 163px;
      right: 20px;
      width: 40px;
-     z-index: 1;
+     z-index: 2;
  }
 
 #social a {
     display: block;
     width: 40px;
     height: 40px;
-    background: yellow;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
+
+a.fbook, a.twit, a.gplus {
+  background: url(../images/social-icons.png) no-repeat;
+}
+
+a.fbook { background-position: 0 0; }
+a.fbook:hover { background-position: -40px 0; }
+a.fbook:active { background-position: -80px 0; }
+
+a.twit { background-position: 0 -40px; }
+a.twit:hover { background-position: -40px -40px; }
+a.twit:active { background-position: -80px -40px; }
+
+a.gplus { background-position: 0 -80px; }
+a.gplus:hover { background-position: -40px -80px; }
+a.gplus:active { background-position: -80px -80px; }
  /*/////////// DETAILS ///////////////////*/
  /* Pseudo Class Selectors */
 
