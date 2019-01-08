@@ -1,0 +1,106 @@
+@media only screen and (max-width: 1108px) {
+
+    .wrapper {
+        width: 90%;
+    }
+
+    #social {
+        position: absolute;
+        top: 82px;
+        right: 40px;
+        width: auto;
+    }
+
+    #social a {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    body {
+        font-size: 85%;
+    }
+
+    #logo h1 {
+        width: 35px;
+        height: 35px;
+    }
+
+    #logo h2 {
+        font-size: 2.2em;
+    }
+
+    #social {
+        top: 78px;
+    }
+
+    .col-3 p {
+        -moz-column-rule: 1px dotted #ccc;
+        -wbekit-column-rule: 1px dotted #ccc;
+        column-rule: 1px dotted #ccc;
+        -moz-column-gap: 1.5em;
+        -webkit-column-gap: 1.5em;
+        column-gap: 1.5em;
+        column-count: 1;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+    }
+
+}
+
+@media only screen and (max-width: 760px) {
+
+    #navbar nav a {
+        font-size: 0.9em;
+    }
+
+    .col-1, .col-2, .col-3 {
+        width: 100%;
+        margin: 10px;
+        float: none;
+    }
+
+    .border-right {
+        border: 0;
+    }
+
+    #details div {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+
+    #navbar nav a {
+        display: none;
+    }
+
+    #navbar nav a.menu-icon {
+        display: block;
+        float: right;
+        font-size: 1.5em;
+        padding: 10px 20px;
+        width: auto;
+    }
+
+    #logo {
+        padding: 60px 20px 0 0;
+    }
+
+    #social {
+        top: 58px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+
+    #logo h2 {
+        visibility: hidden;
+    }
+
+    #social {
+        right: 15px;
+    }
+}
